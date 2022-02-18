@@ -59,7 +59,7 @@ else:
 print(f"Using {', '.join(fields)} as fields")
 
 metadata.set_index(args.id_field, inplace=True)
-label_to_node = tree.label_to_node()
+label_to_node = tree.label_to_node(selection='all')
 results = {}
 results['strain'] = label_to_node.keys()
 for field in tqdm.tqdm(fields):
@@ -101,6 +101,8 @@ for field in tqdm.tqdm(fields):
 
             else:
                 node.character = intersection
+            if len(node.character) == 0:
+                node.character = parent.character
     results[field] = []
     for label in label_to_node:
         if len(label_to_node[label].character) == 1:
