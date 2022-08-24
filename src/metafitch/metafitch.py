@@ -64,8 +64,6 @@ def main():
     else:
         id_field = fields[0]
 
-    if id_field not in fields:
-        fields.insert(0, id_field)
     print('Reading metadata...')
 
     # Read all columns as strings
