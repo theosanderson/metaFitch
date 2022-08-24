@@ -1,0 +1,10 @@
+alive-progress
+pandas
+treeswift
+scipy
+xopen
+sphinx-argparse
+sphinx-rtd-theme
+myst-parser
+sphinx-book-theme
+furo
