@@ -1,0 +1,5 @@
+**/_version.py
+**/*.egg-info/*
+src/metafitch/__pycache__/cli.cpython-310.pyc
+src/metafitch/__pycache__/__init__.cpython-310.pyc
+src/metafitch/__pycache__/metafitch.cpython-310.pyc
