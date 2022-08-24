@@ -1,6 +1,6 @@
 # metaFitch
 
-Metafitch is a project to perform reconstruction of character trait's using Fitch's method
+Metafitch is a project to perform reconstruction of character traits using Fitch's method
 
 
 
