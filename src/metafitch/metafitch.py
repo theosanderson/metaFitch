@@ -72,7 +72,7 @@ def main():
                         sep='\t' if args.metadata.endswith('.tsv')
                         or args.metadata.endswith('.txt')
                         or args.metadata.endswith('.tsv.gz') else ',',
-                        usecols=fields)
+                        usecols=fields + [id_field])
     
 
     # check for duplicates in id_field
