@@ -21,7 +21,7 @@ To install Chronumental using pip, run:
 Usage
 ============
 .. argparse::
-   :module: metafitch.metafitch
+   :module: metafitch:cli.main
    :func: get_parser
    :prog: metafitch
 

@@ -5,7 +5,7 @@ import argparse
 from alive_progress import alive_it
 import xopen
 
-def main():
+def get_parser():
     parser = argparse.ArgumentParser(description='Metafitch')
     parser.add_argument(
         '-t',
@@ -34,6 +34,11 @@ def main():
                         '--tolerate_ambiguity',
                         action='store_true',
                         help= "Tolerate ambiguity in the reconstructions")
+    return parser
+
+def main():
+    parser = get_parser()
+
 
     args = parser.parse_args()
 
